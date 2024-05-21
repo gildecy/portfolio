@@ -1,139 +1,98 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
     <style>
-        body {
-    background-image: url(./bg-mobile-dark.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-
-
-}
-
-body * {
-    font-family: 'Montserrat', sans-serif;
-}
-
+        /* Reset básico para garantir consistência entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#container {
-    margin: auto;
-    width: 360px;
-    padding-top: 56px;
-
-
-
-
-
-}
-
-ul {
-    flex-direction: column;
-    display: flex;
-    list-style: none;
-    gap: 16px;
-
-
-
-}
-
-ul li {
-    padding: 16px 24px;
-    justify-content: center;
-    display: flex;
-    color: aliceblue;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    cursor: pointer;
-
-
-
-
+    color: #fff;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
 }
 
-
-
-
-#container img {
-   
-    width: 112px;
-    display: block;
-    border-color: aliceblue;
-    border-radius: 60px;
-
-
-
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.menu {
-
-
-    text-align: center;
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-#switch button {
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-b-url) no-repeat center;
-    border-radius: 50%;
-
-    position: absolute;
-
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-
-#profile img {
-
-    display: block;
-    width: 112PX;
-    margin: auto;
-    padding: 24px;
-    margin-top: 8px;
+.about, .projects {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-#nomeprincipal {
-    color: aliceblue;
-    text-align: center;
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
+
+p {
+    font-size: 1.2em;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
     </style>
-    
-      
-</head>
-
 <body>
-   <div id="container">
-    <div id="profile">
-    <img src="./assets/avatar.png" alt="">
-</div>
-
-
-    <p id="nomeprincipal">@GILDECY</p>
-
-    
-
-
-    
-
- <ul>
-       
-   <li>Inicio</li>
-   <li>Portfolio</li>
-   <li>Curriculum</li>
-   <li>Sobre</li>
-   
-  </ul>
-
- 
+    <header>
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+    </header>
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes.</p>
+    </section>
+    <section class="projects">
+        <h2>Projetos</h2>
+        <div class="project">
+            <h3>Projeto 1</h3>
+            <p>Descrição do Projeto 1.</p>
+        </div>
+        <div class="project">
+            <h3>Projeto 2</h3>
+            <p>Descrição do Projeto 2.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+    <footer>
+        <p>© 2024 Meu Nome. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
-    
